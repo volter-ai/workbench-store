@@ -46,4 +46,8 @@ the first installer anywhere pays the cost once.
 One PR, one line, optional recipe. Listing is curation, not vetting —
 Workbench reads every repo before first run, and sealed worlds catch
 what reading misses.
+
+An app's icon is its own, shipped here as `icons/<id>.png` (square, 180px
+or more). Its store page is its GitHub repository: the description, stars,
+license and topics, and the README with its pictures as the preview.
 - **Yuvomi** — family planner: calendar, tasks, meals. `yuvomi`
