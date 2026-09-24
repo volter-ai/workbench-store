@@ -3,7 +3,7 @@
   "name": "TiddlyWiki",
   "icon": "BookOpen",
   "tint": "#5778d8",
-  "install": "{ [ -f package.json ] || npm init -y >/dev/null; } && npm install --no-audit --no-fund tiddlywiki@5 && { [ -d wiki ] || ./node_modules/.bin/tiddlywiki wiki --init server; }",
+  "install": "{ [ -f package.json ] || npm init -y >/dev/null; } && npm install --no-audit --no-fund tiddlywiki@5 && { [ -d wiki ] || ./node_modules/.bin/tiddlywiki wiki --init server; } && mkdir -p wiki/tiddlers && printf 'title: $:/config/tiddlyweb/host\\n\\n$protocol$//$host$/__app/tiddlywiki/\\n' > 'wiki/tiddlers/$__config_tiddlyweb_host.tid'",
   "start": "./node_modules/.bin/tiddlywiki wiki --listen port=5307 host=127.0.0.1",
   "port": 5307,
   "singleOrigin": {
