@@ -9,7 +9,7 @@
   "singleOrigin": {
     "basePath": {
       "arg": "path-prefix=",
-      "strip": true
+      "strip": false
     }
   },
   "window": {
