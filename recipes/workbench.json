@@ -1,6 +1,6 @@
 {
   "id": "workbench",
-  "name": "Workbench",
+  "name": "Volter Desktop",
   "icon": "AppWindow",
   "tint": "#3b4150",
   "repo": "https://github.com/volter-ai/workbench",

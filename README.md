@@ -1,9 +1,9 @@
-# Workbench Store
+# Volter Desktop Store
 
-The app store for [Workbench OS](https://github.com/yueranyuan) — an
+The app store for [Volter Desktop](https://github.com/volter-ai/workbench) — an
 awesome-list. Each entry: a repo, one line of what it is, and (when
-verified) an install recipe. A Workbench instance subscribes to this repo;
-its Workbench resident reads the list, prints entries as cards, and
+verified) an install recipe. A Volter Desktop instance subscribes to this repo;
+its Volter Desktop resident reads the list, prints entries as cards, and
 installs on request. Recipes make installs instant; a missing recipe means
 the installing resident figures it out — and PRs the recipe back here, so
 the first installer anywhere pays the cost once.
@@ -44,7 +44,7 @@ the first installer anywhere pays the cost once.
 ## How to list an app
 
 One PR, one line, optional recipe. Listing is curation, not vetting —
-Workbench reads every repo before first run, and sealed worlds catch
+Volter Desktop reads every repo before first run, and sealed worlds catch
 what reading misses.
 
 An app's icon is its own, shipped here as `icons/<id>.png` (square, 180px
