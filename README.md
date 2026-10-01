@@ -44,8 +44,10 @@ the first installer anywhere pays the cost once.
 ## How to list an app
 
 One PR, one line, optional recipe. Listing is curation, not vetting —
-Volter Desktop reads every repo before first run, and sealed worlds catch
-what reading misses.
+Volter Desktop reads every repo before first run, and an app that names
+vendors runs attached to the box's World, whose twins answer its vendor
+calls and which refuses the public hosts it does not list (for its Node code;
+it is not a network-level seal).
 
 An app's icon is its own, shipped here as `icons/<id>.png` (square, 180px
 or more). Its store page is its GitHub repository: the description, stars,
