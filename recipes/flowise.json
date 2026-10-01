@@ -4,10 +4,11 @@
   "icon": "Workflow",
   "tint": "#7b61ff",
   "repo": "https://github.com/FlowiseAI/Flowise",
-  "install": "mkdir -p ../flowise-bin && cd ../flowise-bin && { [ -f package.json ] || npm init -y >/dev/null; } && npm install --no-audit --no-fund flowise@latest",
+  "install": "mkdir -p ../flowise-bin.noindex && cd ../flowise-bin.noindex && { [ -f package.json ] || npm init -y >/dev/null; } && npm install --no-audit --no-fund flowise@latest",
   "start": "./node_modules/.bin/flowise start",
   "port": 5306,
-  "world": "flowise-world",
+  "world": "workbench/box",
+  "egress": ["https://tiktoken.pages.dev"],
   "vendors": [
     "anthropic",
     "openai"
@@ -17,7 +18,7 @@
     "h": 780
   },
   "notes": "LLM flow builder; runs SEALED in a twin world — AI vendors are twins, no real keys",
-  "cwd": "programs/flowise-bin",
+  "cwd": "programs/flowise-bin.noindex",
   "auth": {
     "login": {
       "path": "/api/v1/auth/login",
