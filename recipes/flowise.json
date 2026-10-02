@@ -54,6 +54,38 @@
         "key": "features",
         "from": "features"
       }
+    ],
+    "seed": [
+      {
+        "check": "/api/v1/credentials?credentialName=openAIApi",
+        "path": "/api/v1/credentials",
+        "update": "/api/v1/credentials/{id}",
+        "headers": {
+          "x-request-from": "internal"
+        },
+        "json": {
+          "name": "OpenAI (this box's World)",
+          "credentialName": "openAIApi",
+          "plainDataObj": {
+            "openAIApiKey": "${env:OPENAI_API_KEY}"
+          }
+        }
+      },
+      {
+        "check": "/api/v1/credentials?credentialName=anthropicApi",
+        "path": "/api/v1/credentials",
+        "update": "/api/v1/credentials/{id}",
+        "headers": {
+          "x-request-from": "internal"
+        },
+        "json": {
+          "name": "Anthropic (this box's World)",
+          "credentialName": "anthropicApi",
+          "plainDataObj": {
+            "anthropicApiKey": "${env:ANTHROPIC_API_KEY}"
+          }
+        }
+      }
     ]
   }
 }
